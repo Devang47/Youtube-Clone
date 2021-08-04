@@ -1,0 +1,106 @@
+.VideosWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100% - 62px);
+  width: calc(100% - 190px);
+  max-width: 1800px;
+  gap: 10px;
+  margin: 118px auto 0 auto;
+  position: relative;
+  left: 92px;
+  margin-bottom: 50px;
+  a {
+    text-decoration: none;
+    height: 264px;
+    &:active {
+      text-decoration: none;
+    }
+  }
+  .videoItem {
+height: 270.667px;
+    width: 304.66666666px;
+    padding: 9px;
+    // background-color: rgb(129, 0, 0);
+    display: flex;
+    flex-direction: column;
+    // margin-bottom: 50px;
+    &:active {
+      background-color: #303030;
+    }
+    .thumbnail {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+      img {
+        height: 163px;
+      }
+    }
+    .logo-and-details {
+      margin: 10px 0px 0 0;
+      display: flex;
+      flex-direction: row;
+      .channel-logo {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .title-details {
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        margin: 0px 0 0 10px;
+        color: #a1a1a1;
+
+        .video-title {
+          font-size: 16px;
+          font-weight: 500;
+          color: #fff;
+          line-height: 22px;
+          max-height: 45px;
+          max-width: 220px;
+          overflow: hidden;
+        }
+        .channel-Name {
+          margin-top: 3px;
+          font-size: 15px;
+          //   font-weight: 500;
+        }
+        .views-time {
+          display: flex;
+          flex-direction: row;
+
+          .views {
+            font-size: 13px;
+            position: relative;
+            &::after {
+              content: "";
+              height: 4px;
+              width: 4px;
+              border-radius: 50%;
+              background-color: #a1a1a1;
+              position: absolute;
+              top: calc(60% - 4px);
+              right: -10px;
+            }
+          }
+          .upload-time {
+            padding-left: 7px;
+            font-size: 13px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.videosslide {
+  left: 120px;
+  width: calc(100% - 350px);
+}
