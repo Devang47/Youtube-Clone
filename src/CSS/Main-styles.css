@@ -764,7 +764,7 @@
 }
 
 .video_player .left .video_details h1 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
 }
@@ -797,7 +797,7 @@
   position: absolute;
   top: 127%;
   left: 2px;
-  content: '';
+  content: "";
   height: 2px;
   width: 132px;
   background-color: #aaaaaa;
@@ -827,10 +827,169 @@
   fill: #aaaaaa;
   height: 26px;
   width: 26px;
+  border-radius: 50%;
+}
+
+.video_player .left .video_details .details_right button svg:focus {
+  background-color: #2e2e2e;
 }
 
 .video_player .left .video_details .details_right .Menu {
-  display: none;
+  position: absolute;
+  left: 91%;
+  top: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 0;
+  width: 170px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #212121;
+}
+
+.video_player .left .video_details .details_right .Menu button {
+  white-space: nowrap;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 3px 15px;
+  gap: 10px;
+}
+
+.video_player .left .video_details .details_right .Menu button svg {
+  color: #909090;
+}
+
+.video_player .left .video_details .details_right .Menu button:hover {
+  background-color: #2e2e2e;
+}
+
+.channel_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+  color: white;
+}
+
+.channel_details .channel_thumb {
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 15px 0 0;
+}
+
+.channel_details .channel_thumb img {
+  height: 48px;
+  border-radius: 50%;
+  width: 48px;
+  background-color: #909090;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.channel_details .channel_name {
+  margin-right: auto;
+}
+
+.channel_details .channel_name h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 1px;
+}
+
+.channel_details .channel_name h2 svg {
+  height: 12px;
+  width: 12px;
+  color: #aaaaaa;
+}
+
+.channel_details .channel_name span {
+  line-height: 14px;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.channel_details .subscribe_btn_container .subscribe_btn, .channel_details .subscribe_btn_container .subscribed_btn {
+  background-color: #cc0000;
+  margin-right: 10px;
+  color: white;
+}
+
+.channel_details .subscribe_btn_container .subscribe_btn .MuiButton-label, .channel_details .subscribe_btn_container .subscribed_btn .MuiButton-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.channel_details .subscribe_btn_container .subscribed_btn {
+  background-color: #303030;
+  color: #aaaaaa;
+}
+
+.channel_details .notifications {
+  color: #909090;
+  padding-right: 10px;
+}
+
+.description {
+  margin: 20px 0 0 63px;
+  color: white;
+  width: 100%;
+  max-width: 580px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #292929;
+}
+
+.description a {
+  font-size: 14px;
+  display: inline-block;
+  color: #3ea6ff;
+  text-decoration: none;
+  width: 30ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dot {
+  height: 3px;
+  width: 3px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #909090;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0 -2px 0 2px;
 }
 
 body {
