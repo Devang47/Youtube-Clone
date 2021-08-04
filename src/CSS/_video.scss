@@ -1,3 +1,4 @@
+
 .VideosWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -7,20 +8,25 @@
   gap: 20px 10px;
   margin: 118px auto 0 auto;
   position: relative;
+  min-width: 1100px;
   left: 92px;
   margin-bottom: 50px;
   a {
     text-decoration: none;
-    height: 264px;
+    height: fit-content;
     &:active {
       text-decoration: none;
     }
   }
+  .single_video_item {
+    width: 22%;
+    max-width: 354.66666666px;
+    min-width: 260px;
+  }
   .videoItem {
     height: fit-content;
-    width: 304.66666666px;
-    padding: 9px 4px 20px;
-    // background-color: rgb(129, 0, 0);
+    width: 100%;
+    padding: 9px 4px 10px;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -34,6 +40,7 @@
         object-fit: cover;
         height: 163px;
         width: 98%;
+        display: block;
         margin: 0 auto;
         background-color: #a1a1a1;
       }
@@ -49,6 +56,8 @@
         border-radius: 50%;
         overflow: hidden;
         img {
+          object-fit: cover;
+          background-color: #a1a1a1;
           height: 100%;
           width: 100%;
         }
@@ -105,5 +114,5 @@
 
 .videosslide {
   left: 120px;
-  width: calc(100% - 350px);
+  width: calc(100% - 320px);
 }
