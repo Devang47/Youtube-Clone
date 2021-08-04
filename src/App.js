@@ -6,6 +6,7 @@ import Littlenav from "./Components/littlenav";
 import Navbar from "./Components/Navbar";
 import Sidenavbar from "./Components/sidenavbar";
 import VideoTemplate from "./Components/VideoTemplate";
+import VideoPlayer from "./Components/VideoPlayer";
 
 import "./CSS/Main-styles.css";
 
@@ -23,25 +24,29 @@ function App() {
         SideNavbarStatus={navStatus}
       />
 
-      <Littlenav navigation={navStatus} />
       {navStatus ? (
         <Fullsidenav
           userloggedin={login}
           changelogin={setLogin}
           location={navigation}
           setLocation={setNavigation}
-        />
-      ) : (
+          />
+          ) : (
         <Sidenavbar
-          userloggedin={login}
-          location={navigation}
-          setLocation={setNavigation}
+        userloggedin={login}
+        location={navigation}
+        setLocation={setNavigation}
         />
-      )}
-      <Router>
-        <Route></Route>
-      </Router>
-      <VideoTemplate userloggedin={login} navigation={navStatus} />
+        )}
+      <Switch>
+        <Route path="/" exact>
+        <Littlenav navigation={navStatus} />
+          <VideoTemplate userloggedin={login} navigation={navStatus} />
+        </Route>
+        <Route path="/video" exact>
+          <VideoPlayer />
+        </Route>
+      </Switch>
     </Router>
   );
 }
