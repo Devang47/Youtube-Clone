@@ -24,26 +24,34 @@ function App() {
         SideNavbarStatus={navStatus}
       />
 
-      {navStatus ? (
-        <Fullsidenav
-          userloggedin={login}
-          changelogin={setLogin}
-          location={navigation}
-          setLocation={setNavigation}
-          />
-          ) : (
-        <Sidenavbar
-        userloggedin={login}
-        location={navigation}
-        setLocation={setNavigation}
-        />
-        )}
       <Switch>
         <Route path="/" exact>
-        <Littlenav navigation={navStatus} />
+          {navStatus ? (
+            <Fullsidenav
+              userloggedin={login}
+              changelogin={setLogin}
+              location={navigation}
+              setLocation={setNavigation}
+            />
+          ) : (
+            <Sidenavbar
+              userloggedin={login}
+              location={navigation}
+              setLocation={setNavigation}
+            />
+          )}
+          <Littlenav navigation={navStatus} />
           <VideoTemplate userloggedin={login} navigation={navStatus} />
         </Route>
         <Route path="/video" exact>
+          {navStatus && (
+            <Fullsidenav
+              userloggedin={login}
+              changelogin={setLogin}
+              location={navigation}
+              setLocation={setNavigation}
+            />
+          )}
           <VideoPlayer />
         </Route>
       </Switch>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
@@ -9,24 +9,28 @@ import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import FlagIcon from "@material-ui/icons/Flag";
 
 function VideoPlayer() {
+  const [combined, setCombined] = useState({
+    hiddenMenu: false,
+  });
+
   return (
     <section className="video_player">
       <section className="left">
         <div className="video"></div>
         <div className="video_details">
-          <div className="tags">#webdev #js #100SecondsOfCode</div>
+          {/* <div className="tags">#webdev #js #100SecondsOfCode</div> */}
           <div className="title_date">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <h1>Avengers Infinity War with Ashish Chanchlani</h1>
             <div className="date">157,076 views Mar 15, 2021</div>
           </div>
           <div className="details_right">
-            <div className="likes">
+            <button className="likes">
               <ThumbUpAltIcon /> 123
-            </div>
-            <div className="dislikes">
+            </button>
+            <button className="dislikes">
               <ThumbDownIcon /> 123
-            </div>
-            <div className="share">
+            </button>
+            <button className="share">
               <svg
                 viewBox="0 0 24 24"
                 preserveAspectRatio="xMidYMid meet"
@@ -40,13 +44,14 @@ function VideoPlayer() {
                 </g>
               </svg>
               SHARE
-            </div>
-            <div className="save_playlist">
+            </button>
+            <button className="save_playlist">
               <PlaylistAddIcon />
-            </div>
-            <div className="more">
+              SAVE
+            </button>
+            <button className="more">
               <MoreHorizIcon />
-            </div>
+            </button>
             <div className="Menu">
               <button className="item">
                 <FlagIcon />

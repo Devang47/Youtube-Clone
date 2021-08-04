@@ -4,11 +4,11 @@
   flex-wrap: wrap;
   height: calc(100% - 62px);
   width: calc(100% - 190px);
+  min-width: 1100px;
   max-width: 1800px;
   gap: 20px 10px;
   margin: 118px auto 0 auto;
   position: relative;
-  min-width: 1100px;
   left: 92px;
   margin-bottom: 50px;
   a {
