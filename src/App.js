@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar";
 import Sidenavbar from "./Components/sidenavbar";
 import VideoTemplate from "./Components/VideoTemplate";
 
-import "./CSS/Main-styles.scss";
+import "./CSS/Main-styles.css";
 
 function App() {
   const [navStatus, setNavStatus] = useState(false);

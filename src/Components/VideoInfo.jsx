@@ -1,6 +1,6 @@
 const videoInfo = [
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -9,7 +9,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -18,7 +18,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -27,7 +27,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -36,7 +36,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -45,7 +45,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -54,7 +54,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -63,7 +63,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -72,7 +72,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -81,7 +81,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -90,7 +90,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -99,7 +99,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -108,7 +108,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -117,7 +117,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -126,7 +126,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -135,7 +135,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -144,7 +144,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -153,7 +153,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -162,7 +162,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -171,7 +171,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -180,7 +180,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -189,7 +189,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -198,7 +198,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -207,7 +207,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -216,7 +216,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -225,7 +225,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -234,7 +234,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -243,7 +243,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -252,7 +252,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -261,7 +261,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -270,7 +270,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
@@ -279,7 +279,7 @@ const videoInfo = [
     uploadTime: "20 hrs ago",
   },
   {
-    Thumbnail: "images/thumbnail.png",
+    Thumbnail: "../Images/thumbnail.png",
     ChannelLogo: "images/channellogo.png",
     Title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis magna",
