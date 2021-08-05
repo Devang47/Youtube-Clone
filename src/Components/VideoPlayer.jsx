@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FakeVideos from "./FakeVideos";
 
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
@@ -11,12 +12,17 @@ import FlagIcon from "@material-ui/icons/Flag";
 import Button from "@material-ui/core/Button";
 import SortIcon from "@material-ui/icons/Sort";
 
-import TestVideo from "./tesing.mp4";
-import Poster  from './poster.png'
+import TestVideo from "./testing.mp4";
+import Poster from "./poster.png";
+
+import Image1 from "../Images/placeholder-image-1.jpg";
+import Image2 from "../Images/placeholder-image-2.jpg";
+import Image3 from "../Images/placeholder-image-3.jpg";
+import Image4 from "../Images/placeholder-image-4.jpg";
 
 const comments = [
   {
-    avatar: "",
+    avatar: Image1,
     name: "Golda Streich",
     time: "2",
     likes: "1",
@@ -24,7 +30,7 @@ const comments = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,",
   },
   {
-    avatar: "",
+    avatar: Image2,
     name: "Gaston Murphy DDS",
     time: "12",
     likes: "21",
@@ -32,7 +38,7 @@ const comments = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Pellentesque sit amet porttitor eget dolor morbi non arcu. ",
   },
   {
-    avatar: "",
+    avatar: Image4,
     name: "Rakesh Yadav",
     time: "10",
     likes: "13",
@@ -40,7 +46,7 @@ const comments = [
       "Mollis aliquam ut porttitor leo a diam. Ut tristique et egestas quis ipsum. Aliquet bibendum enim facilisis gravida. Sed risus pretium quam vulputate dignissim suspendisse in.",
   },
   {
-    avatar: "",
+    avatar: Image3,
     name: "Golda Streich",
     time: "5",
     likes: "12",
@@ -48,7 +54,7 @@ const comments = [
       "Duis at consectetur lorem donec massa sapien faucibus et. Faucibus a pellentesque sit amet porttitor eget dolor morbi.",
   },
   {
-    avatar: "",
+    avatar: Image1,
     name: "Hariom Vlogs",
     time: "2",
     likes: "0",
@@ -56,7 +62,7 @@ const comments = [
       "Et odio pellentesque diam volutpat commodo sed egestas. Ac turpis egestas integer eget. ",
   },
   {
-    avatar: "",
+    avatar: Image2,
     name: "Saadhna Singh",
     time: "7",
     likes: "1",
@@ -64,7 +70,7 @@ const comments = [
       "Nibh mauris cursus mattis molestie. Vulputate eu scelerisque felis imperdiet proin. Sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
-    avatar: "",
+    avatar: Image4,
     name: "Stephan Bijzitte",
     time: "17",
     likes: "10",
@@ -89,7 +95,7 @@ function VideoPlayer() {
       [
         ...commentData,
         {
-          avatar: "",
+          avatar: Image1,
           name: "Destin Roberts",
           time: "0",
           likes: "0",
@@ -131,6 +137,8 @@ function VideoPlayer() {
               <a
                 href="https://videojs.com/html5-video-support/"
                 target="_blank"
+                without
+                rel="noreferrer"
               >
                 supports HTML5 video
               </a>
@@ -138,17 +146,16 @@ function VideoPlayer() {
           </video>
         </div>
         <div className="video_details">
-          {/* <div className="tags">#webdev #js #100SecondsOfCode</div> */}
+          <div className="tags">#OfficialMusicVideo #SubUrban #Cradles</div>
           <div className="title_date">
-            <h1>Avengers Infinity War with Ashish Chanchlani</h1>
+            <h1>Sub Urban - Cradles [Official Music Video]</h1>
             <div className="date">
-              157,076 views <span className="dot"></span> Mar 15, 2021
+              37,643 views <span className="dot"></span> Aug 4, 2021
             </div>
           </div>
           <div
-            className="details_right"
             className={
-              combined.liked ? "blue , details_right " : "details_right"
+              combined.liked ? "blue  details_right " : "details_right"
             }
           >
             <button className="likes">
@@ -208,7 +215,8 @@ function VideoPlayer() {
           </div>
           <div className="channel_name">
             <h2>
-              Ashish Chanchlani Vines <CheckCircleIcon />
+              Sub Urban
+              <CheckCircleIcon />
             </h2>
             <span className="subscribers">25.7M subscribers</span>
           </div>
@@ -345,8 +353,26 @@ function VideoPlayer() {
         </section>
       </section>
 
-      <section className="right">
-        <h2></h2>
+      <section className="right_section">
+        <div className="suggestions">
+          {FakeVideos.map((e) => {
+            return (
+              <div className="item" variant="contained" key={e.key}>
+                <div className="thumbnail">
+                  <img src={e.image} alt="" />z
+                </div>
+                <div className="details">
+                  <div className="title">{e.title}</div>
+                  <div className="channel">{e.channelName}</div>
+                  <div className="views_date">
+                    {e.views} <span className="dot"></span>
+                    {e.time}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </section>
   );
