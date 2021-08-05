@@ -740,6 +740,7 @@
   display: grid;
   -ms-grid-columns: 68% 32%;
       grid-template-columns: 68% 32%;
+  padding: 0 20px;
 }
 
 .video_player .left .video {
@@ -750,11 +751,16 @@
   background-color: #1b76b3;
 }
 
+.video_player .left .my-video-dimensions {
+  width: 100%;
+  height: 100%;
+}
+
 .video_player .left .video_details {
   color: #aaaaaa;
   margin-top: 35px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .video_player .left .video_details .tags {
@@ -937,13 +943,15 @@
   color: #aaaaaa;
 }
 
-.channel_details .subscribe_btn_container .subscribe_btn, .channel_details .subscribe_btn_container .subscribed_btn {
+.channel_details .subscribe_btn_container .subscribe_btn,
+.channel_details .subscribe_btn_container .subscribed_btn {
   background-color: #cc0000;
   margin-right: 10px;
   color: white;
 }
 
-.channel_details .subscribe_btn_container .subscribe_btn .MuiButton-label, .channel_details .subscribe_btn_container .subscribed_btn .MuiButton-label {
+.channel_details .subscribe_btn_container .subscribe_btn .MuiButton-label,
+.channel_details .subscribe_btn_container .subscribed_btn .MuiButton-label {
   font-size: 14px !important;
   font-weight: 500 !important;
 }
@@ -961,13 +969,11 @@
 .description {
   margin: 20px 0 0 63px;
   color: white;
-  width: 100%;
   max-width: 580px;
   font-size: 14px;
   white-space: pre-wrap;
   line-height: 20px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #292929;
 }
 
 .description a {
@@ -989,7 +995,128 @@
   background-color: #909090;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin: 0 -2px 0 2px;
+  margin: 0 2px 0 6px;
+}
+
+.comments {
+  padding-bottom: 200px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comments .count_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
+  margin: 30px 0 30px;
+  color: white;
+  font-size: 16px;
+}
+
+.comments .count_wrapper .sort {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.534);
+  padding: 2px 4px;
+}
+
+.comments .count_wrapper .sort .MuiButton-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.comments .add_comment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.comments .add_comment form .avatar {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.comments .add_comment form .avatar img {
+  background-color: #909090;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comments .add_comment form .comment_input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #aaaaaa;
+  color: white !important;
+  outline: none;
+  padding: 8px 4px;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.comments .add_comment form .comment_input:focus {
+  border-bottom: 1px solid black;
+}
+
+.comments .add_comment form .action_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  position: absolute;
+  left: 64%;
+  top: 42px;
+}
+
+.comments .add_comment form .action_btns .cancel,
+.comments .add_comment form .action_btns .push_comment {
+  background-color: #3ea6ff;
+  margin-right: 10px;
+  color: black;
+}
+
+.comments .add_comment form .action_btns .cancel .MuiButton-label,
+.comments .add_comment form .action_btns .push_comment .MuiButton-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.comments .add_comment form .action_btns .cancel {
+  background-color: #141414;
+  color: #aaaaaae7;
 }
 
 body {

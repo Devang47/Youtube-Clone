@@ -7,6 +7,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 68% 32%;
+  padding: 0 20px;
   .left {
     .video {
       height: 68vh;
@@ -14,6 +15,10 @@
       max-height: 720px;
       width: 100%;
       background-color: rgb(27, 118, 179);
+    }
+    .my-video-dimensions {
+      width: 100%;
+      height: 100%;
     }
     .video_details {
       color: #aaaaaa;
@@ -33,7 +38,7 @@
         font-size: 14px;
       }
       padding-bottom: 10px;
-      border-bottom: 1px solid #292929;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       .details_right {
         margin-top: -20px;
         margin-left: auto;
@@ -168,13 +173,11 @@
 .description {
   margin: 20px 0 0 63px;
   color: white;
-  width: 100%;
   max-width: 580px;
   font-size: 14px;
   white-space: pre-wrap;
   line-height: 20px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #292929;
   a {
     font-size: 14px;
     display: inline-block;
@@ -194,5 +197,90 @@
   border-radius: 50%;
   background-color: #909090;
   transform: translate(-50%, -50%);
-  margin: 0 -2px 0 2px;
+  margin: 0 2px 0 6px;
+}
+.comments {
+  padding-bottom: 200px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  .count_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 30px 0 30px;
+    color: white;
+    font-size: 16px;
+    .sort {
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.534);
+      padding: 2px 4px;
+      .MuiButton-label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+      }
+    }
+  }
+  .add_comment {
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+
+      .avatar {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+        img {
+          background-color: #909090;
+          width: 100%;
+          border-radius: 50%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .comment_input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #aaaaaa;
+        color: white !important;
+        outline: none;
+        padding: 8px 4px;
+        font-size: 14px;
+        margin-top: -10px;
+        &:focus {
+          border-bottom: 1px solid rgb(0, 0, 0);
+        }
+      }
+      .action_btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        left: 64%;
+        top: 42px;
+        .cancel,
+        .push_comment {
+          background-color: #3ea6ff;
+          margin-right: 10px;
+          color: black;
+          .MuiButton-label {
+            font-size: 14px !important;
+            font-weight: 500 !important;
+          }
+        }
+        .cancel {
+          background-color: #141414;
+          color: #aaaaaae7;
+        }
+      }
+    }
+  }
 }

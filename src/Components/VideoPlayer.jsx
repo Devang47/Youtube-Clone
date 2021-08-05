@@ -9,6 +9,8 @@ import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import FlagIcon from "@material-ui/icons/Flag";
 import Button from "@material-ui/core/Button";
+import SortIcon from "@material-ui/icons/Sort";
+import TextField from "@material-ui/core/TextField";
 
 function VideoPlayer() {
   const [combined, setCombined] = useState({
@@ -18,7 +20,33 @@ function VideoPlayer() {
   return (
     <section className="video_player">
       <section className="left">
-        <div className="video"></div>
+        <div className="video">
+          <video
+            id="my-video"
+            class="video-js"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            poster="MY_VIDEO_POSTER.jpg"
+            data-setup="{}"
+          >
+            <source
+              src="https://www.youtube.com/watch?v=lvSnH0wgZIA"
+              type="video/mp4"
+            />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider
+              upgrading to a web browser that
+              <a
+                href="https://videojs.com/html5-video-support/"
+                target="_blank"
+              >
+                supports HTML5 video
+              </a>
+            </p>
+          </video>
+        </div>
         <div className="video_details">
           {/* <div className="tags">#webdev #js #100SecondsOfCode</div> */}
           <div className="title_date">
@@ -75,13 +103,13 @@ function VideoPlayer() {
             )}
           </div>
         </div>
-        <div className="channel_details">
+        <section className="channel_details">
           <div className="channel_thumb">
             <img src="" alt="" />
           </div>
           <div className="channel_name">
             <h2>
-              ashish chanchlani vines <CheckCircleIcon />
+              Ashish Chanchlani Vines <CheckCircleIcon />
             </h2>
             <span className="subscribers">25.7M subscribers</span>
           </div>
@@ -96,43 +124,73 @@ function VideoPlayer() {
           <div className="notifications">
             <NotificationsNoneIcon />
           </div>
-        </div>
-        <div className="description">
+        </section>
+        <section className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
           <a href="http://localhost:3000/video">
-            {" "}
             https://www.youtube.com/watch?v=xh1ROLEDyP4&t=242s
           </a>
           <br />
           <br />
           alias quidem aliquam esse ea, temporibus ipsam inventore itaque error
-          <br />
-          <br />
           provident autem libero amet? Non, reprehenderit. Aperiam voluptatibus
-          <br />
-          perspiciatis reiciendis deserunt!
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non
+          perspiciatis reiciendis deserunt! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sit non
           <br />
           <br />
           perferendis ad provident dolorem laboriosam odio amet et dicta, facere
           <br />
           repellat nobis similique assumenda, iusto quidem corporis a molestiae
-          iste!
+          iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+          repellat
           <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellat
           <br />
           iste sequi sed minus adipisci totam fuga officia soluta laborum sint
-          <br />
           repudiandae, ullam officiis aliquid eveniet, quisquam sapiente debitis
           <br />
           cum.
           <br />
-        </div>
+        </section>
+        <section className="comments">
+          <div className="count_wrapper">
+            <div className="comments_count"> 21,387 Comments </div>
+            <Button className="sort" variant="contained">
+              <SortIcon />
+              SORT BY
+            </Button>
+          </div>
+          <div className="add_comment">
+            <form>
+              <div className="avatar">
+                <img src="" alt="" />
+              </div>
+              <input
+                id="standard-basic"
+                placeholder="Type something..."
+                className="comment_input"
+              />
+              <div className="action_btns">
+                <Button className="cancel" variant="contained">
+                  Cancel
+                </Button>
+                <Button variant="contained" className='push_comment' color="primary">
+                  Comment
+                </Button>
+              </div>
+            </form>
+
+          </div>
+
+            <div className="all_comments">
+              <div className="comment"></div>
+            </div>
+
+        </section>
       </section>
 
-      <section className="right"></section>
+      <section className="right">
+        <h2></h2>
+      </section>
     </section>
   );
 }
