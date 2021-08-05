@@ -1280,6 +1280,10 @@
   color: white;
 }
 
+.right_section .suggestions a:focus, .right_section .suggestions a:active {
+  text-decoration: none;
+}
+
 .right_section .suggestions .item {
   display: -ms-grid;
   display: grid;
@@ -1287,7 +1291,14 @@
       grid-template-columns: 45% 55%;
   gap: 5px;
   height: 100px;
+  width: 100%;
+  max-width: 400px;
   margin-bottom: 10px;
+}
+
+.right_section .suggestions .item:focus, .right_section .suggestions .item:active {
+  background-color: #202020;
+  text-decoration: none;
 }
 
 .right_section .suggestions .item .thumbnail {

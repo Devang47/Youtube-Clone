@@ -406,12 +406,25 @@
 
 .right_section {
   .suggestions {
+    a {
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
     .item {
       display: grid;
       grid-template-columns: 45% 55%;
       gap: 5px;
       height: 100px;
+      width: 100%;
+      max-width: 400px;
       margin-bottom: 10px;
+      &:focus,
+      &:active {
+        background-color: #202020;
+        text-decoration: none;
+      }
       .thumbnail {
         width: 100%;
         height: 100%;

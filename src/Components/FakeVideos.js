@@ -7,7 +7,7 @@ const FakeVideos = [
   {
     key: 1,
     image: Image1,
-    title: "Hello world? Who is the Inventor of Hello world",
+    title: "Is Real Estate Really That Expensive? - Robert Kiyosaki, Kim Kiyosaki and Jason Hartman",
     channelName: "Truth Among us",
     time: "1 year ago",
     views: "1B views",
@@ -15,7 +15,7 @@ const FakeVideos = [
   {
     key: 2,
     image: Image2,
-    title: "Who made this website? This.com | WebsitePedia.com",
+    title: "Dave Chappelle Smoked Too Much Weed In Detroit | Netflix is a joke",
     channelName: "WebsitePedia.com",
     time: "3 months ago",
     views: "12M views",
@@ -23,7 +23,7 @@ const FakeVideos = [
   {
     key: 3,
     image: Image3,
-    title: "WTF is life? How to be lively?",
+    title: "Stand Alone to Stand Apart | Bhuvan Bam | TEDx Talks",
     channelName: "Filthyerr",
     time: "4 year ago",
     views: "29K views",
@@ -31,7 +31,7 @@ const FakeVideos = [
   {
     key: 4,
     image: Image4,
-    title: "My last message to all...",
+    title: "React & Firebase Chat App Tutorial",
     channelName: "R-Sauce",
     time: "10 year ago",
     views: "2K views",
@@ -39,7 +39,7 @@ const FakeVideos = [
   {
     key: 5,
     image: Image1,
-    title: "Hello world? Who is the Inventor of Hello world",
+    title: "Is Real Estate Really That Expensive? - Robert Kiyosaki, Kim Kiyosaki and Jason Hartman",
     channelName: "Truth Among us",
     time: "1 year ago",
     views: "4K views",
@@ -47,7 +47,7 @@ const FakeVideos = [
   {
     key: 6,
     image: Image2,
-    title: "Who made this website? This.com | WebsitePedia.com",
+    title: "Dave Chappelle Smoked Too Much Weed In Detroit | Netflix is a joke",
     channelName: "WebsitePedia.com",
     time: "3 months ago",
     views: "23K views",
@@ -55,7 +55,7 @@ const FakeVideos = [
   {
     key: 7,
     image: Image3,
-    title: "WTF is life? How to be lively?",
+    title: "Stand Alone to Stand Apart | Bhuvan Bam | TEDx Talks",
     channelName: "Filthyerr",
     time: "4 year ago",
     views: "1K views",
@@ -63,7 +63,7 @@ const FakeVideos = [
   {
     key: 8,
     image: Image4,
-    title: "My last message to all...",
+    title: "React & Firebase Chat App Tutorial",
     channelName: "R-Sauce",
     time: "10 year ago",
     views: "2K views",
@@ -71,7 +71,7 @@ const FakeVideos = [
   {
     key: 9,
     image: Image1,
-    title: "Hello world? Who is the Inventor of Hello world",
+    title: "Is Real Estate Really That Expensive? - Robert Kiyosaki, Kim Kiyosaki and Jason Hartman",
     channelName: "Truth Among us",
     time: "1 year ago",
     views: "20K views",
@@ -79,7 +79,7 @@ const FakeVideos = [
   {
     key: 10,
     image: Image2,
-    title: "Who made this website? This.com | WebsitePedia.com",
+    title: "Dave Chappelle Smoked Too Much Weed In Detroit | Netflix is a joke",
     channelName: "WebsitePedia.com",
     time: "3 months ago",
     views: "122K views",
@@ -87,7 +87,7 @@ const FakeVideos = [
   {
     key: 11,
     image: Image3,
-    title: "WTF is life? How to be lively?",
+    title: "Stand Alone to Stand Apart | Bhuvan Bam | TEDx Talks",
     channelName: "Filthyerr",
     time: "4 year ago",
     views: "12K views",
@@ -95,7 +95,7 @@ const FakeVideos = [
   {
     key: 12,
     image: Image4,
-    title: "My last message to all...",
+    title: "React & Firebase Chat App Tutorial",
     channelName: "R-Sauce",
     time: "10 year ago",
     views: "12K views",
@@ -103,7 +103,7 @@ const FakeVideos = [
   {
     key: 13,
     image: Image4,
-    title: "My last message to all...",
+    title: "React & Firebase Chat App Tutorial",
     channelName: "R-Sauce",
     time: "10 year ago",
     views: "2K views",
@@ -111,7 +111,7 @@ const FakeVideos = [
   {
     key: 14,
     image: Image1,
-    title: "Hello world? Who is the Inventor of Hello world",
+    title: "Is Real Estate Really That Expensive? - Robert Kiyosaki, Kim Kiyosaki and Jason Hartman",
     channelName: "Truth Among us",
     time: "1 year ago",
     views: "4K views",
@@ -119,7 +119,7 @@ const FakeVideos = [
   {
     key: 15,
     image: Image2,
-    title: "Who made this website? This.com | WebsitePedia.com",
+    title: "Dave Chappelle Smoked Too Much Weed In Detroit | Netflix is a joke",
     channelName: "WebsitePedia.com",
     time: "3 months ago",
     views: "23K views",
@@ -127,7 +127,7 @@ const FakeVideos = [
   {
     key: 16,
     image: Image3,
-    title: "WTF is life? How to be lively?",
+    title: "Stand Alone to Stand Apart | Bhuvan Bam | TEDx Talks",
     channelName: "Filthyerr",
     time: "4 year ago",
     views: "1K views",
@@ -135,7 +135,7 @@ const FakeVideos = [
   {
     key: 17,
     image: Image4,
-    title: "My last message to all...",
+    title: "React & Firebase Chat App Tutorial",
     channelName: "R-Sauce",
     time: "10 year ago",
     views: "2K views",
@@ -143,7 +143,7 @@ const FakeVideos = [
   {
     key: 18,
     image: Image1,
-    title: "Hello world? Who is the Inventor of Hello world",
+    title: "Is Real Estate Really That Expensive? - Robert Kiyosaki, Kim Kiyosaki and Jason Hartman",
     channelName: "Truth Among us",
     time: "1 year ago",
     views: "20K views",
@@ -151,7 +151,7 @@ const FakeVideos = [
   {
     key: 19,
     image: Image2,
-    title: "Who made this website? This.com | WebsitePedia.com",
+    title: "Dave Chappelle Smoked Too Much Weed In Detroit | Netflix is a joke",
     channelName: "WebsitePedia.com",
     time: "3 months ago",
     views: "122K views",
@@ -159,7 +159,7 @@ const FakeVideos = [
   {
     key: 20,
     image: Image3,
-    title: "WTF is life? How to be lively?",
+    title: "Stand Alone to Stand Apart | Bhuvan Bam | TEDx Talks",
     channelName: "Filthyerr",
     time: "4 year ago",
     views: "12K views",
@@ -167,7 +167,7 @@ const FakeVideos = [
   {
     key: 21,
     image: Image4,
-    title: "My last message to all...",
+    title: "React & Firebase Chat App Tutorial",
     channelName: "R-Sauce",
     time: "10 year ago",
     views: "12K views",
@@ -175,7 +175,7 @@ const FakeVideos = [
   {
     key: 22,
     image: Image1,
-    title: "Who made this website? This.com | WebsitePedia.com",
+    title: "Dave Chappelle Smoked Too Much Weed In Detroit | Netflix is a joke",
     channelName: "WebsitePedia.com",
     time: "3 months ago",
     views: "122K views",
@@ -183,7 +183,7 @@ const FakeVideos = [
   {
     key: 23,
     image: Image2,
-    title: "WTF is life? How to be lively?",
+    title: "Stand Alone to Stand Apart | Bhuvan Bam | TEDx Talks",
     channelName: "Filthyerr",
     time: "4 year ago",
     views: "12K views",
@@ -191,7 +191,7 @@ const FakeVideos = [
   {
     key: 24,
     image: Image3,
-    title: "My last message to all...",
+    title: "React & Firebase Chat App Tutorial",
     channelName: "R-Sauce",
     time: "10 year ago",
     views: "12K views",

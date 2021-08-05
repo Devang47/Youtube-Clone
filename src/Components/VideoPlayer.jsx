@@ -126,14 +126,14 @@ function VideoPlayer() {
         <div className="video">
           <video
             id="my-video"
-            class="video-js"
+            className="video-js"
             controls
             preload="auto"
             poster={Poster}
             data-setup="{}"
           >
             <source src={TestVideo} type="video/mp4" />
-            <p class="vjs-no-js">
+            <p className="vjs-no-js">
               To view this video please enable JavaScript, and consider
               upgrading to a web browser that
               <a
@@ -357,9 +357,9 @@ function VideoPlayer() {
 
       <section className="right_section">
         <div className="suggestions">
-          {FakeVideos.map((e) => {
+          {FakeVideos.slice(0,19).map((e) => {
             return (
-              <Link key={e.key}>
+              <Link key={e.key} to='/video'>
                 <div className="item" variant="contained">
                   <div className="thumbnail">
                     <img src={e.image} alt="" />z
