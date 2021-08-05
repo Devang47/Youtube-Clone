@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import HomeIcon from "@material-ui/icons/Home";
 import ExploreIcon from "@material-ui/icons/Explore";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
@@ -12,25 +11,25 @@ function Sidenavbar() {
     <>
       <div className="sidebar">
         <div className="menu-items" id="item1">
-          <Link href="#">
+          <Link to="/">
             <HomeIcon className="sidenavbar-icons" />
             Home
           </Link>
         </div>
         <div className="menu-items" id="item2">
-          <Link href="#">
+          <Link to="/">
             <ExploreIcon className="sidenavbar-icons" />
             Explore
           </Link>
         </div>
         <div className="menu-items" id="item3">
-          <Link href="#">
+          <Link to="/">
             <SubscriptionsIcon className="sidenavbar-icons" />
             Subscriptions
           </Link>
         </div>
         <div className="menu-items" id="item4">
-          <Link href="#">
+          <Link to="/">
             <VideoLibraryIcon className="sidenavbar-icons" />
             Library
           </Link>

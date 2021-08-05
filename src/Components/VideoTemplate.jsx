@@ -20,7 +20,7 @@ function VideoTemplate({ navigation }) {
       <div className={changeclass()}>
         {videoInfo.map(() => {
           return (
-            <Link href="#" className='single_video_item'>
+            <Link to="/video" className='single_video_item'>
               <div className="videoItem">
                 <div className="thumbnail">
                   <img src={Thumbnail} alt="" />

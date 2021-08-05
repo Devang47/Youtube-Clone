@@ -7,58 +7,58 @@ import HistoryIcon from "@material-ui/icons/History";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import Brightness1Icon from "@material-ui/icons/Brightness1";
 
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function Fullsidenav({ userloggedin, changelogin }) {
   return (
     <>
       <div className="sidenav-wrapper">
         <div className="item" id="item1">
-          <Link href='#'>
+          <Link to="#">
             <HomeIcon className="svg" />
             Home
           </Link>
         </div>
         <div className="item" id="item2">
-          <Link href='#'>
+          <Link to="#">
             <ExploreIcon className="svg" />
             Explore
           </Link>
         </div>
         <div className="item" id="item3">
-          <Link href='#'>
+          <Link to="#">
             <SubscriptionsIcon className="svg" /> Subscriptions
           </Link>
         </div>
         <hr />
         <div className="item" id="item4">
-          <Link href='#'>
+          <Link to="#">
             <VideoLibraryIcon className="svg" />
             Library
           </Link>
         </div>
         <div className="item" id="item5">
-          <Link href='#'>
+          <Link to="#">
             <HistoryIcon className="svg" /> History
           </Link>
         </div>
         <div className="item" id="item5">
-          <Link href='#'>
+          <Link to="#">
             <Brightness1Icon className="svg" /> Your videos
           </Link>
         </div>
         <div className="item" id="item5">
-          <Link href='#'>
+          <Link to="#">
             <Brightness1Icon className="svg" /> Watch later
           </Link>
         </div>
         <div className="item" id="item5">
-          <Link href='#'>
+          <Link to="#">
             <Brightness1Icon className="svg" /> Liked videos
           </Link>
         </div>
         <div className="item" id="item5">
-          <Link href='#'>
+          <Link to="#">
             <Brightness1Icon className="svg" /> Gaming
           </Link>
         </div>
@@ -90,52 +90,52 @@ function Fullsidenav({ userloggedin, changelogin }) {
           <div className="yt-best-section-head">Best of YouTube</div>
           <div className="items">
             <div className="item" id="item1">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item2">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item3">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item4">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item5">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item6">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item7">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item8">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item9">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>
             <div className="item" id="item10">
-              <Link href='#'>
+              <Link to="#">
                 <div className="circle"></div> Placeholder
               </Link>
             </div>

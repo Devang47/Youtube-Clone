@@ -11,6 +11,9 @@ import FlagIcon from "@material-ui/icons/Flag";
 import Button from "@material-ui/core/Button";
 import SortIcon from "@material-ui/icons/Sort";
 
+import TestVideo from "./tesing.mp4";
+import Poster  from './poster.png'
+
 const comments = [
   {
     avatar: "",
@@ -118,15 +121,10 @@ function VideoPlayer() {
             class="video-js"
             controls
             preload="auto"
-            width="640"
-            height="264"
-            poster="MY_VIDEO_POSTER.jpg"
+            poster={Poster}
             data-setup="{}"
           >
-            <source
-              src="https://www.youtube.com/watch?v=lvSnH0wgZIA"
-              type="video/mp4"
-            />
+            <source src={TestVideo} type="video/mp4" />
             <p class="vjs-no-js">
               To view this video please enable JavaScript, and consider
               upgrading to a web browser that
@@ -305,7 +303,7 @@ function VideoPlayer() {
                   </Button>
                 ) : (
                   <Button variant="contained" disabled className="disabled">
-                    Disabled
+                    Comment
                   </Button>
                 )}
               </div>

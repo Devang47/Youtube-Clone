@@ -30,12 +30,12 @@ function Navbar({
               className="menu-icon"
               onClick={() => changeSideNavbar(!SideNavbarStatus)}
             >
-              <Link href="#">
+              <Link to="#">
                 <MenuIcon />
               </Link>
             </div>
             <div className="logo">
-              <Link href="#">
+              <Link to="/">
                 <img src={Logo} alt="" />
               </Link>
             </div>
@@ -50,14 +50,14 @@ function Navbar({
                 value={query}
                 onChange={(e) => Setquery(e.target.value)}
               />
-              <Link href="#" label="search">
+              <Link to="#" label="search">
                 <button className="search-btn" label="search">
                   <SearchIcon className="searchsvg" />
                 </button>
               </Link>
             </form>
             <div className="voice-icon">
-              <Link href="#">
+              <Link to="#">
                 <MicIcon className="voice-icon-inner" />
               </Link>
             </div>
@@ -66,17 +66,17 @@ function Navbar({
             {userloggedin ? (
               <>
                 <div className="add-video">
-                  <Link href="#">
+                  <Link to="#">
                     <VideoCallIcon className="nav-item" />
                   </Link>
                 </div>
                 <div className="yt-apps">
-                  <Link href="#">
+                  <Link to="#">
                     <AppsIcon className="nav-item" />
                   </Link>
                 </div>
                 <div className="notifications">
-                  <Link href="#">
+                  <Link to="#">
                     <NotificationsIcon className="nav-item" />
                   </Link>
                 </div>
@@ -94,7 +94,7 @@ function Navbar({
             ) : (
               <>
                 <div className="yt-apps">
-                  <Link href="#">
+                  <Link to="#">
                     <AppsIcon className="nav-item" />
                   </Link>
                 </div>

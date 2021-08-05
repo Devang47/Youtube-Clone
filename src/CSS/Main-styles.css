@@ -748,7 +748,12 @@
   min-height: 400px;
   max-height: 720px;
   width: 100%;
-  background-color: #1b76b3;
+  background-color: black;
+}
+
+.video_player .left .video video {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .video_player .left .my-video-dimensions {
@@ -805,7 +810,7 @@
   left: 2px;
   content: "";
   height: 2px;
-  width: 132px;
+  width: 112px;
   background-color: #aaaaaa;
 }
 
@@ -1206,6 +1211,7 @@
 }
 
 .comments .comment .right .name_time .time {
+  margin-left: 3px;
   font-size: 13px;
 }
 
