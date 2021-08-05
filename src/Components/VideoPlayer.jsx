@@ -173,18 +173,48 @@ function VideoPlayer() {
                 <Button className="cancel" variant="contained">
                   Cancel
                 </Button>
-                <Button variant="contained" className='push_comment' color="primary">
+                <Button
+                  variant="contained"
+                  className="push_comment"
+                  color="primary"
+                >
                   Comment
                 </Button>
               </div>
             </form>
-
           </div>
 
-            <div className="all_comments">
-              <div className="comment"></div>
-            </div>
+          <div className="all_comments">
+            <div className="comment">
+              <div className="flex">
 
+              <div className="avatar">
+                <img src="" alt="" />
+              </div>
+              <div className="right">
+                <div className="name_time">
+                  <span className="username">Jamie McIntyre</span>
+                  <span className="time"> 10 hours ago</span>
+                </div>
+                <div className="comment_body">
+                  iste sequi sed minus adipisci totam fuga officia soluta
+                  laborum sint repudiandae, ullam officiis aliquid eveniet,
+                  quisquam sapiente debitis cum.
+                </div>
+              </div>
+              </div>
+              <div className="action_btns">
+                <button className="likes">
+                  <ThumbUpAltIcon />
+                </button>
+                <span className="likes_count">123</span>
+                <button className="dislikes">
+                  <ThumbDownIcon />
+                </button>
+                <span className="reply">reply</span>
+              </div>
+            </div>
+          </div>
         </section>
       </section>
 

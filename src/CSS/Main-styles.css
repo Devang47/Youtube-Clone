@@ -1062,9 +1062,9 @@
 
 .comments .add_comment form .avatar img {
   background-color: #909090;
-  width: 100%;
+  width: 40px;
   border-radius: 50%;
-  height: 100%;
+  height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1117,6 +1117,41 @@
 .comments .add_comment form .action_btns .cancel {
   background-color: #141414;
   color: #aaaaaae7;
+}
+
+.comments .all_comments {
+  margin-top: 60px;
+}
+
+.comments .comment {
+  gap: 20px;
+  color: #aaaaaa;
+}
+
+.comments .comment .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.comments .comment .avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.comments .comment .avatar img {
+  height: 40px;
+  width: 40px;
+  background-color: #909090;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
