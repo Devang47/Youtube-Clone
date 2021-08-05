@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FakeVideos from "./FakeVideos";
 
-
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
 import ThumbDownIcon from "@material-ui/icons/ThumbDown";
@@ -357,9 +356,9 @@ function VideoPlayer() {
 
       <section className="right_section">
         <div className="suggestions">
-          {FakeVideos.slice(0,19).map((e) => {
+          {FakeVideos.slice(0, 19).map((e) => {
             return (
-              <Link key={e.key} to='/video'>
+              <Link key={e.key} to="/video">
                 <div className="item" variant="contained">
                   <div className="thumbnail">
                     <img src={e.image} alt="" />z
