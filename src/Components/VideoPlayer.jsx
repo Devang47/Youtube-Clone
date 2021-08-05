@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import FakeVideos from "./FakeVideos";
+
 
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
@@ -357,19 +359,21 @@ function VideoPlayer() {
         <div className="suggestions">
           {FakeVideos.map((e) => {
             return (
-              <div className="item" variant="contained" key={e.key}>
-                <div className="thumbnail">
-                  <img src={e.image} alt="" />z
-                </div>
-                <div className="details">
-                  <div className="title">{e.title}</div>
-                  <div className="channel">{e.channelName}</div>
-                  <div className="views_date">
-                    {e.views} <span className="dot"></span>
-                    {e.time}
+              <Link key={e.key}>
+                <div className="item" variant="contained">
+                  <div className="thumbnail">
+                    <img src={e.image} alt="" />z
+                  </div>
+                  <div className="details">
+                    <div className="title">{e.title}</div>
+                    <div className="channel">{e.channelName}</div>
+                    <div className="views_date">
+                      {e.views} <span className="dot"></span>
+                      {e.time}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
