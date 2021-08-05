@@ -840,6 +840,11 @@
   background-color: #2e2e2e;
 }
 
+.video_player .left .video_details .details_right button .blue {
+  color: #3ea6ff;
+  fill: #3ea6ff;
+}
+
 .video_player .left .video_details .details_right .Menu {
   position: absolute;
   left: 91%;
@@ -884,6 +889,10 @@
 
 .video_player .left .video_details .details_right .Menu button:hover {
   background-color: #2e2e2e;
+}
+
+.video_player .left .video_details .blue::after {
+  background-color: #3ea6ff;
 }
 
 .channel_details {
@@ -945,6 +954,7 @@
 
 .channel_details .subscribe_btn_container .subscribe_btn,
 .channel_details .subscribe_btn_container .subscribed_btn {
+  cursor: pointer;
   background-color: #cc0000;
   margin-right: 10px;
   color: white;
@@ -1023,6 +1033,7 @@
   background-color: transparent;
   color: rgba(255, 255, 255, 0.534);
   padding: 2px 4px;
+  cursor: pointer;
 }
 
 .comments .count_wrapper .sort .MuiButton-label {
@@ -1097,7 +1108,7 @@
           justify-content: center;
   gap: 10px;
   position: absolute;
-  left: 64%;
+  right: 0%;
   top: 42px;
 }
 
@@ -1106,10 +1117,21 @@
   background-color: #3ea6ff;
   margin-right: 10px;
   color: black;
+  cursor: pointer;
 }
 
 .comments .add_comment form .action_btns .cancel .MuiButton-label,
 .comments .add_comment form .action_btns .push_comment .MuiButton-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.comments .add_comment form .action_btns .disabled {
+  background-color: #303030;
+  color: #717171;
+}
+
+.comments .add_comment form .action_btns .disabled .MuiButton-label {
   font-size: 14px !important;
   font-weight: 500 !important;
 }
@@ -1124,20 +1146,21 @@
 }
 
 .comments .comment {
-  gap: 20px;
   color: #aaaaaa;
+  margin-bottom: 20px;
 }
 
 .comments .comment .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  gap: 13px;
 }
 
 .comments .comment .avatar {
@@ -1152,6 +1175,101 @@
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.comments .comment .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.comments .comment .right .name_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+
+.comments .comment .right .name_time .username {
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments .comment .right .name_time .time {
+  font-size: 13px;
+}
+
+.comments .comment .right .comment_body {
+  font-size: 14px;
+  color: white;
+  max-width: 800px;
+  line-height: 20px;
+}
+
+.comments .comment .action_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 53px;
+  color: #aaaaaa;
+  margin-top: 12px;
+}
+
+.comments .comment .action_btns span {
+  font-size: 13px;
+  margin: 0 14px 0 8px;
+}
+
+.comments .comment .action_btns .reply .cancel {
+  margin-left: 10px;
+  background-color: #141414;
+  color: #aaaaaae7;
+  padding: 0px 5px;
+}
+
+.comments .comment .action_btns .reply .cancel .MuiButton-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.comments .comment .action_btns button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.comments .comment .action_btns button svg {
+  height: 17px;
+  width: 17px;
+  color: #aaaaaa;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.comments .comment .action_btns button svg:hover {
+  color: white;
 }
 
 body {

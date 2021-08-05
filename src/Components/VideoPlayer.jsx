@@ -10,12 +10,104 @@ import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import FlagIcon from "@material-ui/icons/Flag";
 import Button from "@material-ui/core/Button";
 import SortIcon from "@material-ui/icons/Sort";
-import TextField from "@material-ui/core/TextField";
+
+const comments = [
+  {
+    avatar: "",
+    name: "Golda Streich",
+    time: "2",
+    likes: "1",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,",
+  },
+  {
+    avatar: "",
+    name: "Gaston Murphy DDS",
+    time: "12",
+    likes: "21",
+    message:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Pellentesque sit amet porttitor eget dolor morbi non arcu. ",
+  },
+  {
+    avatar: "",
+    name: "Rakesh Yadav",
+    time: "10",
+    likes: "13",
+    message:
+      "Mollis aliquam ut porttitor leo a diam. Ut tristique et egestas quis ipsum. Aliquet bibendum enim facilisis gravida. Sed risus pretium quam vulputate dignissim suspendisse in.",
+  },
+  {
+    avatar: "",
+    name: "Golda Streich",
+    time: "5",
+    likes: "12",
+    message:
+      "Duis at consectetur lorem donec massa sapien faucibus et. Faucibus a pellentesque sit amet porttitor eget dolor morbi.",
+  },
+  {
+    avatar: "",
+    name: "Hariom Vlogs",
+    time: "2",
+    likes: "0",
+    message:
+      "Et odio pellentesque diam volutpat commodo sed egestas. Ac turpis egestas integer eget. ",
+  },
+  {
+    avatar: "",
+    name: "Saadhna Singh",
+    time: "7",
+    likes: "1",
+    message:
+      "Nibh mauris cursus mattis molestie. Vulputate eu scelerisque felis imperdiet proin. Sagittis nisl rhoncus mattis rhoncus urna neque.",
+  },
+  {
+    avatar: "",
+    name: "Stephan Bijzitte",
+    time: "17",
+    likes: "10",
+    message:
+      "Habitant morbi tristique senectus et netus et malesuada. Libero volutpat sed cras ornare arcu dui vivamus arcu. Sit amet justo donec enim diam. ",
+  },
+];
 
 function VideoPlayer() {
+  const [commentData, setCommentData] = useState(comments);
+
   const [combined, setCombined] = useState({
     hiddenMenu: false,
+    addCommentData: "",
+    subscribed: false,
+    liked: false,
   });
+
+  const addComment = (e) => {
+    e.preventDefault();
+    setCommentData(
+      [
+        ...commentData,
+        {
+          avatar: "",
+          name: "Destin Roberts",
+          time: "0",
+          likes: "0",
+          message: combined.addCommentData,
+        },
+      ].reverse()
+    );
+    clearCommentInput();
+  };
+
+  const clearCommentInput = () => {
+    setCombined({ ...combined, addCommentData: "" });
+  };
+
+  const toggleSubscribe = () => {
+    setCombined({ ...combined, subscribed: !combined.subscribed });
+  };
+
+  const likeVideo = () => {
+    setCombined({ ...combined, liked: !combined.liked });
+  };
 
   return (
     <section className="video_player">
@@ -55,12 +147,21 @@ function VideoPlayer() {
               157,076 views <span className="dot"></span> Mar 15, 2021
             </div>
           </div>
-          <div className="details_right">
+          <div
+            className="details_right"
+            className={
+              combined.liked ? "blue , details_right " : "details_right"
+            }
+          >
             <button className="likes">
-              <ThumbUpAltIcon /> 123
+              <ThumbUpAltIcon
+                onClick={likeVideo}
+                className={combined.liked && "blue"}
+              />
+              123
             </button>
             <button className="dislikes">
-              <ThumbDownIcon /> 123
+              <ThumbDownIcon /> 0
             </button>
             <button className="share">
               <svg
@@ -114,12 +215,24 @@ function VideoPlayer() {
             <span className="subscribers">25.7M subscribers</span>
           </div>
           <div className="subscribe_btn_container">
-            {/* <Button variant="contained" color="red"  className='subscribe_btn'>
-              Subscribe
-            </Button> */}
-            <Button variant="contained" className="subscribed_btn">
-              Subscribed
-            </Button>
+            {combined.subscribed ? (
+              <Button
+                variant="contained"
+                className="subscribed_btn"
+                onClick={toggleSubscribe}
+              >
+                Subscribed
+              </Button>
+            ) : (
+              <Button
+                variant="contained"
+                color="red"
+                className="subscribe_btn"
+                onClick={toggleSubscribe}
+              >
+                Subscribe
+              </Button>
+            )}
           </div>
           <div className="notifications">
             <NotificationsNoneIcon />
@@ -153,14 +266,14 @@ function VideoPlayer() {
         </section>
         <section className="comments">
           <div className="count_wrapper">
-            <div className="comments_count"> 21,387 Comments </div>
+            <div className="comments_count">{commentData.length} Comments </div>
             <Button className="sort" variant="contained">
               <SortIcon />
               SORT BY
             </Button>
           </div>
           <div className="add_comment">
-            <form>
+            <form onSubmit={(e) => addComment(e)}>
               <div className="avatar">
                 <img src="" alt="" />
               </div>
@@ -168,52 +281,68 @@ function VideoPlayer() {
                 id="standard-basic"
                 placeholder="Type something..."
                 className="comment_input"
+                value={combined.addCommentData}
+                onChange={(e) =>
+                  setCombined({ ...combined, addCommentData: e.target.value })
+                }
               />
               <div className="action_btns">
-                <Button className="cancel" variant="contained">
+                <Button
+                  className="cancel"
+                  variant="contained"
+                  onClick={clearCommentInput}
+                >
                   Cancel
                 </Button>
-                <Button
-                  variant="contained"
-                  className="push_comment"
-                  color="primary"
-                >
-                  Comment
-                </Button>
+                {combined.addCommentData ? (
+                  <Button
+                    variant="contained"
+                    className="push_comment"
+                    color="primary"
+                    onClick={(e) => addComment(e)}
+                  >
+                    Comment
+                  </Button>
+                ) : (
+                  <Button variant="contained" disabled className="disabled">
+                    Disabled
+                  </Button>
+                )}
               </div>
             </form>
           </div>
 
           <div className="all_comments">
-            <div className="comment">
-              <div className="flex">
-
-              <div className="avatar">
-                <img src="" alt="" />
-              </div>
-              <div className="right">
-                <div className="name_time">
-                  <span className="username">Jamie McIntyre</span>
-                  <span className="time"> 10 hours ago</span>
+            {commentData.map((e) => (
+              <div className="comment">
+                <div className="flex">
+                  <div className="avatar">
+                    <img src={e.avatar} alt="" />
+                  </div>
+                  <div className="right">
+                    <div className="name_time">
+                      <span className="username">{e.name}</span>
+                      <span className="time">{e.time} hours ago</span>
+                    </div>
+                    <div className="comment_body">{e.message}</div>
+                  </div>
                 </div>
-                <div className="comment_body">
-                  iste sequi sed minus adipisci totam fuga officia soluta
-                  laborum sint repudiandae, ullam officiis aliquid eveniet,
-                  quisquam sapiente debitis cum.
+                <div className="action_btns">
+                  <button className="likes">
+                    <ThumbUpAltIcon onClick={() => (e.likes += 1)} />
+                  </button>
+                  <span className="likes_count">{e.likes}</span>
+                  <button className="dislikes">
+                    <ThumbDownIcon />
+                  </button>
+                  <span className="reply">
+                    <Button className="cancel" variant="contained">
+                      REPLY
+                    </Button>
+                  </span>
                 </div>
               </div>
-              </div>
-              <div className="action_btns">
-                <button className="likes">
-                  <ThumbUpAltIcon />
-                </button>
-                <span className="likes_count">123</span>
-                <button className="dislikes">
-                  <ThumbDownIcon />
-                </button>
-                <span className="reply">reply</span>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </section>
