@@ -12,15 +12,25 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
+import { useHistory } from "react-router";
+
 function Navbar({
   userloggedin,
   changelogin,
   changeSideNavbar,
   SideNavbarStatus,
 }) {
+  const history = useHistory();
+
   const [query, Setquery] = useState("");
 
-  const search = () => {};
+  const search = (e) => {
+    e.preventDefault();
+    // Simulate a mouse click:
+    window.location.href = `https://www.youtube.com/results?search_query=${query}`;
+
+    console.log("helllpwoeor");
+  };
   return (
     <>
       <div className="className='nav-item'">
@@ -46,15 +56,12 @@ function Navbar({
                 type="text"
                 className="search-box"
                 placeholder="Search"
-                autoComplete="off"
                 value={query}
                 onChange={(e) => Setquery(e.target.value)}
               />
-              <Link to="#" label="search">
-                <button className="search-btn" label="search">
-                  <SearchIcon className="searchsvg" />
-                </button>
-              </Link>
+              <button className="search-btn" type="submit" label="search">
+                <SearchIcon className="searchsvg" />
+              </button>
             </form>
             <div className="voice-icon">
               <Link to="#">

@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import videoInfo from "./VideoInfo";
+import FakeVideos from "./FakeVideos";
 
 function VideoTemplate({ navigation }) {
-  const [{ Thumbnail, ChannelLogo, Title, channelName, views, uploadTime }] =
-    videoInfo;
-
   const changeclass = () => {
     if (!navigation) {
       return "VideosWrapper";
@@ -18,23 +15,23 @@ function VideoTemplate({ navigation }) {
   return (
     <>
       <div className={changeclass()}>
-        {videoInfo.map(() => {
+        {FakeVideos.map((e) => {
           return (
-            <Link to="/video" className='single_video_item'>
+            <Link to="/video" className="single_video_item" key={e.key}>
               <div className="videoItem">
                 <div className="thumbnail">
-                  <img src={Thumbnail} alt="" />
+                  <img src={e.image} alt="" />
                 </div>
                 <div className="logo-and-details">
                   <div className="channel-logo">
-                    <img src={ChannelLogo} alt="" />
+                    <img src={e.image} alt="" />
                   </div>
                   <div className="title-details">
-                    <div className="video-title">{Title}</div>
-                    <div className="channel-Name">{channelName}</div>
+                    <div className="video-title">{e.title}</div>
+                    <div className="channel-Name">{e.channelName}</div>
                     <div className="views-time">
-                      <div className="views">{views} views</div>
-                      <div className="upload-time">{uploadTime}</div>
+                      <div className="views">{e.views}</div>
+                      <div className="upload-time">{e.time}</div>
                     </div>
                   </div>
                 </div>
